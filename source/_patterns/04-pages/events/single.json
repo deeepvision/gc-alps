@@ -1,0 +1,117 @@
+{
+  "single__content": {
+    "single_date": {
+      "icon": "icon-calendar",
+      "month": "November",
+      "day": "17",
+      "time": {
+        "from": "8:00p",
+        "to": "11:00p"
+      }
+    },
+    "places_icon": "icon-find",
+    "places": ["Somerville", "Massachusetts"],
+    "single_title": "Uprightness children be taught those who profess the Lord designed vigorous peril and disaster ardent zeal.",
+    "single_image": "https://www.publicdomainpictures.net/pictures/320000/velka/background-image.png",
+    "single_header":"Header 2",
+    "single_description": "The indomitable will arrest the attention you have neighbors lemon pie safeguards for the young strange deputation. Pronounced deliverance is wrought the Lord designed strange deputation inestimable laborers. Erelong began their society recognize character discernment a lesser light. The persecutions visited labor the persecutions visited I recommend to you providence erelong began. Divine judgements intellect persuasions of character uprightness I entreat of you providence all men wondered. If you had made serpent uprightness unlawful pleasures to comprehend. Unlawful pleasures ages persuasions His biddings are enablings God is love if you had made.\nOf earnest mind types and symbols He bade them lemon pie hearts uncorrupted. Approval labor dress it will do you good to conflict with error effectual. Greatest want of the world as the needle to the pole the indomitable will unlawful pleasures plenteous in unlawful pleasures ministering spirits. Types and symbols those who profess veriest serpent ardent zeal discernment. Ages instructions you have neighbors divine judgements upward probation. Ardent zeal He bade them Christ’s method alone serpent I recommend to you. The angel bade him ages of character serpent uprightness pronounced."
+  },
+  "single__sign-up-form": {
+    "block_name": "Sign up for this event",
+    "field_labels": [{
+      "label_id": "first_name",
+      "label_text": "First Name"
+    },
+      {
+        "label_id": "last_name",
+        "label_text": "Last Name"
+      },
+      {
+        "label_id": "email_address",
+        "label_text": "Email Address"
+      }],
+    "buttons": [
+      {
+        "button_default": {
+          "text": "Submit",
+          "icon": "icon-arrow-short-up",
+          "class": "o-button--outline"
+        }
+      },
+      {
+        "button_default": {
+          "text": "Cancel",
+          "icon": "icon-close",
+          "class": "o-button--simple"
+        }
+      }
+    ]
+  },
+  "single__button": {
+    "button_default": {
+      "text": "Button Outline",
+      "icon": "icon-arrow-short-left",
+      "class": "o-button--outline"
+    }
+  },
+  "single__list": {
+    "months": [
+      {
+        "heading_block": {
+          "title": "Related Events"
+        },
+        "events": [
+          {
+            "appearance": "simple",
+            "title": "The Second Coming",
+            "date": {
+              "month": "October",
+              "day": 22,
+              "year": 1844
+            },
+            "location": "everywhere",
+
+            "button_default": {
+              "text": "View details",
+              "icon": "icon-plus",
+              "class": "o-button--outline"
+            }
+          },
+          {
+            "appearance": "withImage",
+            "img_src": "https://imgcp.aacdn.jp/img-a/1200/900/global-aaj-front/article/2017/12/5a307779aad6f_5a307767efee1_337860917.jpg",
+            "title": "The Second Coming",
+            "date": {
+              "month": "October",
+              "day": 22,
+              "year": 1844
+            },
+            "location": "everywhere",
+
+            "button_default": {
+              "text": "View details",
+              "icon": "icon-plus",
+              "class": "o-button--outline"
+            }
+          },
+          {
+            "appearance": "simple",
+            "title": "The Second Coming",
+            "date": {
+              "month": "October",
+              "day": 22,
+              "year": 1844
+            },
+            "location": "everywhere",
+
+            "button_default": {
+              "text": "View details",
+              "icon": "icon-plus",
+              "class": "o-button--outline"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

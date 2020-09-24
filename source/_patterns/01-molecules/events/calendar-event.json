@@ -1,0 +1,18 @@
+{
+  "date": {
+    "month": "november",
+    "day": "16",
+    "time": {
+      "from": "8:00p",
+      "to": "11:00p"
+    }
+  },
+  "title": "ALPS Round 2 Sprint Review",
+  "locations": ["Somerville", "Massachusetts"],
+  "description": "This is where you’d put the event description. This is an example of an event using Event Tickets Plus and the Virtual Events add-on where tickets are sold, and guests cannot see the",
+  "button_default": {
+    "text": "view details",
+    "icon": "icon-arrow-long-right",
+    "class": "o-button--outline"
+  }
+}

@@ -1,0 +1,12 @@
+<div class="c-list">
+  {% for month in months %}
+    <div class="c-list__months">
+      {% include '@molecules/blocks/heading-block.twig' with month %}
+      {%  for event in month.events %}
+        <div class="c-list__item">
+          {% include "@molecules/events/event.twig" with event %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,31 @@
+{
+  "block_name": "Sign up for this event",
+  "field_labels": [{
+    "label_id": "first_name",
+    "label_text": "First Name"
+  },
+  {
+    "label_id": "last_name",
+    "label_text": "Last Name"
+  },
+  {
+    "label_id": "email_address",
+    "label_text": "Email Address"
+  }],
+  "buttons": [
+    {
+      "button_default": {
+        "text": "Submit",
+        "icon": "icon-arrow-short-up",
+        "class": "o-button--outline"
+      }
+    },
+    {
+      "button_default": {
+        "text": "Cancel",
+        "icon": "icon-close",
+        "class": "o-button--simple"
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+<div class="c-search u-shift--left--1-col--at-large">
+  <div class="c-search__params">
+    <input type="text" class="c-search__input" placeholder="Search...">
+    <input type="text" class="c-search__input" placeholder="In a Location...">
+    <div class="c-search__buttons">
+      {% for button in buttons %}
+        <div class="c-search__button">
+          {% include "@atoms/buttons/button.twig" with button %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% if calendar_appearance %}
+    <div class="c-search__appearance">
+      <span class="c-search__appearance-icon">{% include "@atoms/icons/icon-calendar.twig" %}</span>
+      <span class="c-search__appearance-text">{{ calendar_appearance }}</span>
+      <span class="o-arrow--down"></span>
+    </div>
+  {% endif %}
+</div>

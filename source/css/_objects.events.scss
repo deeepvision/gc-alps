@@ -1,0 +1,613 @@
+////
+/// Calendar Components
+////
+
+
+// @molecules/events/event.twig
+
+.c-event {
+  margin-top: $space;
+  height: max-content;
+  width: col-width(6, $space);
+
+  @include media(">small") {
+    width: col-width(6, $space);
+  }
+  @include media(">medium") {
+    width: col-width(5, $space);
+  }
+  @include media(">large") {
+    width: col-width(4, $space);
+  }
+
+  .c-event__wrap {
+    display: flex;
+  }
+  .c-event__calendar-day {
+    position: relative;
+
+    color: white;
+    font-family: Noto Sans;
+    font-weight: bold;
+    text-align: center;
+  }
+  .c-event__bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+  }
+  .c-event__bg-simple {
+    width: col-width(2, $space);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: rgb(47, 85, 127);
+
+    @include media(">medium") {
+      width: col-width(1, $space);
+    }
+  }
+  .c-event__bg-featured {
+    width: col-width(2, $space);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(47, 85, 127, 0.8);
+
+    @include media(">medium") {
+      width: col-width(1, $space);
+    }
+  }
+  .c-event__bg-withImage {
+    width: col-width(2, $space);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(47, 85, 127, 0.8);
+
+    @include media(">medium") {
+      width: col-width(2, $space);
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,19,43,1) 25%, rgba(245,240,4,0) 50%);
+      align-items: flex-start;
+    }
+    & .c-event__date {
+      @include media(">medium") {
+        margin: 0 0 0 15px;
+      }
+    }
+  }
+  .c-event__month {
+    display: none;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+
+    @include media(">medium") {
+      display: block;
+    }
+  }
+  .c-event__day {
+    font-size: 40px;
+  }
+  .c-event__icon {
+    width: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+
+    @include media(">medium") {
+      display: none;
+    }
+  }
+  .c-event__icon-large {
+    width: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+
+    @include media("<medium") {
+      display: none;
+    }
+  }
+  .c-event__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    background: #f5f5f5;
+  }
+  .c-event__content div {
+    margin: 2px 0;
+  }
+  .c-event__title {
+    font-family: Noto Serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #02293e;
+  }
+  .c-event__date-location span {
+    font-family: Noto Sans;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #2f557f;
+  }
+}
+
+// @molecules/events/calendar-no-events.twig
+
+.c-calendar-no-events {
+  width: col-width(6, $space);
+  background: #fff;
+  border-left: 2px solid #84adfd;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+  margin: $space 0;
+  padding: 10px;
+
+  @include media(">medium") {
+    display: none;
+  }
+
+  .c-calendar-no-events__icon {
+    width: 12px;
+  }
+  .c-calendar-no-events__description {
+    font-family: Noto Sans;
+    font-size: 16px;
+    line-height: 22px;
+    color: #777777;
+    margin: 10px 0;
+  }
+  .c-calendar-no-events__button .o-button {
+    padding: 0;
+  }
+}
+
+// @molecules/events/calendar-event.twig
+
+.c-calendar-event {
+  position: relative;
+  width: col-width(6, $space);
+  background: #f5f5f5;
+  padding: 10px;
+  border-left: 1px solid #2e6de7;
+
+  @include media(">medium") {
+    display: none;
+  }
+
+  //&::after {
+  //  content: '';
+  //  width: 20px;
+  //  height: 20px;
+  //  background: #f5f5f5;
+  //  position: absolute;
+  //  left: $space;
+  //  transform: rotate(45deg);
+  //}
+  & div {
+    margin: 4px 0;
+  }
+  .c-calendar-event__date {
+    font-family: Noto Sans;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #717171;
+  }
+  .c-calendar-event__month {}
+  .c-calendar-event__day {}
+  .c-calendar-event__time {
+    display: inline;
+  }
+  .c-calendar-event__time-from {}
+  .c-calendar-event__time-to {}
+  .c-calendar-event__title {
+    font-family: Noto Serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2F557F;
+  }
+  .c-calendar-event__locations {
+    font-family: Noto Sans;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #717171;
+  }
+  .c-calendar-event-description {
+    font-family: Noto Sans;
+    font-size: 16px;
+    line-height: 22px;
+    color: #717171;
+  }
+  .c-calendar-event__button a span {
+    margin-left: 10px;
+  }
+}
+
+// @molecules/events/sign-up-forms.twig
+
+.c-sign-up-form {
+  width: col-width(6, $space);
+  background: #04132B;
+  padding: 15px 15px 20px 15px;
+
+  @include media(">xsmall") {
+    width: col-width(6, $space);
+  }
+  @include media(">small") {
+    width: col-width(5, $space);
+  }
+  @include media(">medium") {
+    width: col-width(4, $space);
+  }
+  @include media(">large") {
+    width: col-width(3, $space);
+  }
+
+  .c-sign-up-form__block-name {
+    font-family: Noto Serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+  .c-sign-up-form__input {
+    margin: 10px 0;
+    font-family: Noto Sans;
+    font-size: 20px;
+    line-height: 27px;
+    color: #84ADFC;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .c-sign-up-form__input label {
+    height: 20px;
+  }
+  .c-sign-up-form__input input {
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #84ADFC;
+    background: transparent;
+    color: #84ADFC;
+  }
+  .c-sign-up-form__input input:focus {
+    outline: none;
+  }
+  .c-sign-up-form__input input:focus + label {
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .c-sign-up-form__button .o-button--outline {
+    border: 1px solid #84ADFC;
+    color: #84adfc;
+  }
+  .c-sign-up-form__button .o-button--outline:hover {
+    background: #6294fa;
+  }
+  .c-sign-up-form__button .o-button--simple,
+  .c-sign-up-form__button .o-button--simple span svg path{
+    color: #84adfc;
+    fill: #84adfc;
+  }
+  .c-sign-up-form__button .o-button--simple:hover,
+  .c-sign-up-form__button .o-button--simple span svg path:hover {
+    color: #6294fa;
+    fill: #6294fa;
+  }
+}
+
+// @molecules/events/search-event.twig
+
+.c-search {
+  width: col-width(6);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+  @include media(">large") {
+    width: col-width(5, $space);
+  }
+  & div {
+    margin: 10px 0;
+  }
+  .c-search__params {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
+  .c-search__params > * {
+    margin: 5px 5px;
+  }
+  .c-search__input {
+    font-family: Noto Sans;
+    font-size: 20px;
+    line-height: 27px;
+    color: #2F557F;
+
+    max-width: 270px;
+    border: none;
+    border-bottom: 1px solid #2F557F;
+    background: transparent;
+
+    @include media(">large") {
+      font-size: 28px;
+      line-height: 38px;
+    }
+  }
+  .c-search__input::placeholder {
+    color: #2F557F;
+  }
+  .c-search__input:focus {
+    outline: none;
+  }
+  .c-search__buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .c-search__appearance {
+    display: flex;
+    align-items: center;
+  }
+  .c-search__appearance span {
+    margin: 0 5px;
+  }
+  .c-search__appearance-icon svg {
+    width: 10px;
+  }
+  .c-search__appearance-icon svg rect {
+    stroke: #717171;
+  }
+  .c-search__appearance-icon svg rect:last-child {
+    fill: #717171;
+  }
+  .c-search__appearance-text {
+    font-family: Noto Sans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #717171;
+  }
+}
+
+// @molecules/events/filter-date.twig
+
+.c-filter-date {
+  display: flex;
+  align-items: center;
+
+  font-family: Noto Sans;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #2F557F;
+
+  @include media(">large") {
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: 1.5px;
+  }
+
+  .c-filter-date__from {}
+  .c-filter-date__to {}
+}
+
+// @molecules/events/filter-nav.twig
+
+.c-filter-nav {
+  display: flex;
+  flex-grow: 1;
+  width: col-width(6, $space);
+  @include media(">medium") {
+    width: col-width(3, $space);
+  }
+  .c-filter-nav__today {
+    order: 4;
+    @include media(">medium") {
+      order: 1;
+    }
+  }
+  .c-filter-nav__prev {
+    order: 3;
+  }
+  .c-filter-nav__next {
+    order: 5;
+  }
+  .c-filter-nav__next a {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .c-filter-nav__next a span {
+    margin-left: 5px;
+  }
+  &__wide .c-filter-nav__today {
+    @include media(">medium") {
+      flex-grow: 1 ;
+    }
+  }
+}
+
+// @organisms/events/list.wig
+
+.c-list {
+  &__months {
+    margin-top: $space * 1.5;
+  }
+}
+
+// @organisms/events/single.twig
+
+.c-single {
+  display: flex;
+  flex-direction: column;
+  width: col-width(6);
+
+  & > div {
+    margin-top: $space;
+  }
+
+  &__date-places{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: $space;
+
+    font-family: Noto Sans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #777;
+
+    & > div{
+      margin-right: 10px;
+    }
+
+    .date {
+      display: flex;
+
+      & svg {
+        width: 13px;
+        height: 20px;
+        margin-right: 8px;
+      }
+      &__month-day-time {
+        text-transform: uppercase;
+      }
+    }
+    .places {
+      display: flex;
+
+      & svg {
+        width: 13px;
+        height: 20px;
+        margin-right: 8px;
+      }
+      &__icon {}
+      &__items {}
+    }
+  }
+
+  &__title {
+    margin-left: $space;
+    font-family: Noto Sans;
+    font-size: 26px;
+    line-height: 35px;
+    color: #717171;
+
+    @include media(">xsmall") {
+      width: col-width(6, $space);
+    }
+    @include media(">small") {
+      width: col-width(5, $space);
+    }
+    @include media(">medium") {
+      width: col-width(4, $space);
+    }
+    @include media(">large") {
+      width: col-width(3, $space);
+    }
+  }
+
+  &__image {
+    @include media(">xsmall") {
+      width: col-width(6);
+    }
+    @include media(">medium") {
+      width: col-width(5);
+    }
+    @include media(">large") {
+      width: col-width(4);
+    }
+  }
+
+  &__content {
+    width: col-width(4);
+    padding-left: $space;
+    & .header {
+      margin-bottom: 10px;
+      font-family: Noto Sans;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 33px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #04132B;
+    }
+    & .content {
+      font-family: Noto Serif;
+      font-size: 16px;
+      line-height: 26px;
+      color: #4A4A4A;
+      @include media(">xsmall") {
+        width: col-width(6, $space * 2);
+      }
+      @include media(">small") {
+        width: col-width(5, $space * 2);
+      }
+      @include media(">medium") {
+        width: col-width(4, $space * 2);
+      }
+      @include media(">large") {
+        width: col-width(3, $space * 2);
+      }
+    }
+  }
+}
+
+// @templates/events-list.twig
+
+.c-events-list {
+  &__search-event {
+    width: col-width(6);
+    background: #F5F5F5;
+  }
+  &__pagination {
+    width: col-width(6);
+    margin-bottom: $space * 2;
+  }
+}
+
+// @templates/event-single.twig
+
+.s-event-single {
+  margin-bottom: $space * 2;
+  & > div {
+    margin-top: $space * 2;
+  }
+  &__button {
+    margin-left: $space;
+  }
+}

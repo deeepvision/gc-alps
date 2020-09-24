@@ -1,0 +1,9 @@
+{
+  "icon": "icon-heart",
+  "description": "No events scheduled for November 17, 2020",
+  "button_default": {
+    "text": "Jump to next event(s)",
+    "icon": "icon-arrow-short-right",
+    "class": "o-button--simple"
+  }
+}

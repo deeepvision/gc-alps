@@ -1,0 +1,16 @@
+<div class="c-sign-up-form">
+  <div class="c-sign-up-form__block-name">{{ block_name }}</div>
+  {% if field_labels %}
+    {% for label in field_labels %}
+      <div class="c-sign-up-form__input">
+        <input id="{{ label.label_id }}" type="text">
+        <label for="{{ label.label_id }}">{{ label.label_text }}</label>
+      </div>
+    {% endfor %}
+  {% endif %}
+  <div class="c-sign-up-form__button">
+    {% for button in buttons %}
+      {% include "@atoms/buttons/button.twig" with button %}
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,27 @@
+{
+  "months": [
+    {
+      "heading_block": {
+        "title": "October"
+      },
+      "events": [
+        {
+          "appearance": "simple",
+          "title": "The Second Coming",
+          "date": {
+            "month": "October",
+            "day": 22,
+            "year": 1844
+          },
+          "location": "everywhere",
+
+          "button_default": {
+            "text": "View details",
+            "icon": "icon-plus",
+            "class": "o-button--outline"
+          }
+        }
+      ]
+    }
+  ]
+}

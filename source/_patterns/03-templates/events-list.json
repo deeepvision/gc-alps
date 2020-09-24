@@ -1,0 +1,204 @@
+{
+  "search_event": {
+    "buttons": [
+      {
+        "button_default": {
+          "text": "Search",
+          "icon": "icon-search",
+          "class": "o-button--outline"
+        }
+      },
+      {
+        "button_default": {
+          "text": "Filter",
+          "icon": "icon-settings",
+          "class": "o-button--simple"
+        }
+      }
+    ],
+    "calendar_appearance": "Week"
+  },
+  "event_list": {
+    "months": [
+      {
+        "heading_block": {
+          "title": "October"
+        },
+        "events": [
+          {
+            "appearance": "simple",
+            "title": "The Second Coming",
+            "date": {
+              "month": "October",
+              "day": 22,
+              "year": 1844
+            },
+            "location": "everywhere",
+
+            "button_default": {
+              "text": "View details",
+              "icon": "icon-plus",
+              "class": "o-button--outline"
+            }
+          },
+          {
+            "appearance": "simple",
+            "title": "The Second Coming",
+            "date": {
+              "month": "October",
+              "day": 22,
+              "year": 1844
+            },
+            "location": "everywhere",
+
+            "button_default": {
+              "text": "View details",
+              "icon": "icon-plus",
+              "class": "o-button--outline"
+            }
+          },
+          {
+            "appearance": "simple",
+            "title": "The Second Coming",
+            "date": {
+              "month": "October",
+              "day": 22,
+              "year": 1844
+            },
+            "location": "everywhere",
+
+            "button_default": {
+              "text": "View details",
+              "icon": "icon-plus",
+              "class": "o-button--outline"
+            }
+          }
+        ]
+      },
+      {
+        "heading_block": {
+          "title": "November"
+        },
+        "events": [
+          {
+            "appearance": "simple",
+            "title": "The Second Coming",
+            "date": {
+              "month": "October",
+              "day": 22,
+              "year": 1844
+            },
+            "location": "everywhere",
+
+            "button_default": {
+              "text": "View details",
+              "icon": "icon-plus",
+              "class": "o-button--outline"
+            }
+          },
+          {
+            "appearance": "featured",
+            "img_src": "https://imgcp.aacdn.jp/img-a/1200/900/global-aaj-front/article/2017/12/5a307779aad6f_5a307767efee1_337860917.jpg",
+            "title": "The Second Coming",
+            "date": {
+              "month": "October",
+              "day": 22,
+              "year": 1844
+            },
+            "location": "everywhere",
+
+            "button_default": {
+              "text": "View details",
+              "icon": "icon-plus",
+              "class": "o-button--outline"
+            }
+          },
+          {
+            "appearance": "simple",
+            "title": "The Second Coming",
+            "date": {
+              "month": "October",
+              "day": 22,
+              "year": 1844
+            },
+            "location": "everywhere",
+
+            "button_default": {
+              "text": "View details",
+              "icon": "icon-plus",
+              "class": "o-button--outline"
+            }
+          }
+        ]
+      },
+      {
+        "heading_block": {
+          "title": "December"
+        },
+        "events": [
+          {
+            "appearance": "simple",
+            "title": "The Second Coming",
+            "date": {
+              "month": "October",
+              "day": 22,
+              "year": 1844
+            },
+            "location": "everywhere",
+
+            "button_default": {
+              "text": "View details",
+              "icon": "icon-plus",
+              "class": "o-button--outline"
+            }
+          },
+          {
+            "appearance": "withImage",
+            "img_src": "https://imgcp.aacdn.jp/img-a/1200/900/global-aaj-front/article/2017/12/5a307779aad6f_5a307767efee1_337860917.jpg",
+            "title": "The Second Coming",
+            "date": {
+              "month": "October",
+              "day": 22,
+              "year": 1844
+            },
+            "location": "everywhere",
+
+            "button_default": {
+              "text": "View details",
+              "icon": "icon-plus",
+              "class": "o-button--outline"
+            }
+          },
+          {
+            "appearance": "simple",
+            "title": "The Second Coming",
+            "date": {
+              "month": "October",
+              "day": 22,
+              "year": 1844
+            },
+            "location": "everywhere",
+
+            "button_default": {
+              "text": "View details",
+              "icon": "icon-plus",
+              "class": "o-button--outline"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "pagination": {
+    "pagination_classes": "u-space--double--top",
+    "pager": {
+      "link": "?page=",
+      "current": 3,
+      "surrounding": 3,
+      "totalpages": 5,
+      "ellipsis": "&hellip;",
+      "next": "Next &rarr;",
+      "prev": "&larr; Previous"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<section class="s-event-single u-shift--left--1-col--at-large">
+  {% if single__content %}
+  <div class="s-event-single__content">
+    {% include "@organisms/events/single.twig" with single__content %}
+  </div>
+  {% endif %}
+  {% if single__signup %}
+  <div class="s-event-single__sign-up-form">
+    {% include "@molecules/events/sign-up-form.twig" with single__signup %}
+  </div>
+  {% endif %}
+  {% if single__button %}
+  <div class="s-event-single__button">
+    {% include "@atoms/buttons/button.twig" with single__button %}
+  </div>
+  {% endif %}
+  {% if single__list %}
+  <div class="s-event-single__list">
+    {% include "@organisms/events/list.twig" with single__list %}
+  </div>
+  {% endif %}
+</section>

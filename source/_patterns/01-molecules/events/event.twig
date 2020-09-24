@@ -1,0 +1,33 @@
+<div class="c-event">
+  <div class="c-event__wrap">
+    <div class="c-event__calendar-day">
+      {% if img_src %}
+        <div class="c-event__bg-img" style="background-image: url('{{ img_src }}');"></div>
+      {% endif %}
+      <div class="c-event__bg-{{ appearance }}">
+        <div class="c-event__date">
+          <div class="c-event__month">{{ date.month }}</div>
+          <div class="c-event__day">{{ date.day }}</div>
+        </div>
+        <div class="c-event__icon">
+          {% include "@atoms/icons/icon-calendar.twig" %}
+        </div>
+        <div class="c-event__icon-large">
+          {% include "@atoms/icons/icon-calendar-large.twig" %}
+        </div>
+      </div>
+    </div>
+    <div class="c-event__content">
+      <div class="c-event__title">{{ title }}</div>
+      <div class="c-event__date-location">
+        <span>{{ date.month }}</span>
+        <span>{{ date.day }},</span>
+        <span>{{ date.year }}</span>
+        <span>{{ location }}</span>
+      </div>
+      <div class="c-event__button">
+        {% include "@atoms/buttons/button.twig" %}
+      </div>
+    </div>
+  </div>
+</div>

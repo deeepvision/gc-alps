@@ -1,0 +1,18 @@
+<div class="c-filter-date">
+  <div class="c-filter-date__from">
+    <span>{{ from.month }}</span>
+    {% if from.day %}
+      <span>{{ from.day }}</span>
+    {% elseif from.year %}
+      <span>{{ from.year }}</span>
+    {% endif %}
+  </div>
+  {% if to %}
+    -
+    <div class="c-filter-date__to">
+      <span>{{ to.month }}</span>
+      <span>{{ to.day }}</span>
+    </div>
+  {% endif %}
+  <span class="o-arrow--down"></span>
+</div>

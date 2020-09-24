@@ -1,0 +1,23 @@
+{
+  "block_appearance": "wide",
+  "today_button": {
+    "button_default": {
+      "text": "Today",
+      "class": "o-button--outline"
+    }
+  },
+  "prev_button": {
+    "button_default": {
+      "text": "October",
+      "icon": "icon-arrow-bracket-left",
+      "class": "o-button--simple"
+    }
+  },
+  "next_button": {
+    "button_default": {
+      "text": "December",
+      "icon": "icon-arrow-bracket-right",
+      "class": "o-button--simple"
+    }
+  }
+}

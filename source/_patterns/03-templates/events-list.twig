@@ -1,0 +1,17 @@
+<div class="c-events-list">
+  {% if search_event %}
+  <div class="c-events-list__search-event">
+    {% include '@molecules/events/search-event.twig' with search_event %}
+  </div>
+  {% endif %}
+  {% if event_list %}
+    <div class="c-events-list__list u-shift--left--1-col--at-large">
+      {% include '@organisms/events/list.twig' with event_list %}
+    </div>
+  {% endif %}
+  {% if pagination %}
+    <div class="c-events-list__pagination">
+      {% include '@molecules/navigation/pagination.twig' with pagination %}
+    </div>
+  {% endif %}
+</div>

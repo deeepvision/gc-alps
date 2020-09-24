@@ -1,0 +1,19 @@
+{
+  "buttons": [
+    {
+      "button_default": {
+        "text": "Search",
+        "icon": "icon-search",
+        "class": "o-button--outline"
+      }
+    },
+    {
+      "button_default": {
+        "text": "Filter",
+        "icon": "icon-settings",
+        "class": "o-button--simple"
+      }
+    }
+  ],
+  "calendar_appearance": "Week"
+}

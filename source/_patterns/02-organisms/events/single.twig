@@ -1,0 +1,32 @@
+<div class="c-single">
+  <div class="c-single__date-places">
+    <div class="date">
+      {% include "@atoms/icons/"~ single_date.icon ~".twig" %}
+      <span class="date__month-day-time">{{ single_date.month }} {{ single_date.day }}, {{ single_date.time.from }} - {{ single_date.time.to }}</span>
+    </div>
+    <div class="places">
+      <div class="places__icon">
+        {% include "@atoms/icons/"~ places_icon ~".twig" %}
+      </div>
+      <div class="places__items">
+        {% for item in places %}
+          <span>{{ item }}{% if loop.index != places|length %},{% endif %}</span>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="c-single__title">
+    {{ single_title }}
+  </div>
+  <div class="c-single__image">
+    <img src="{{ single_image }}" alt="image">
+  </div>
+  <div class="c-single__content">
+    <div class="header">
+      {{ single_header }}
+    </div>
+    <div class="content">
+      {{ single_description }}
+    </div>
+  </div>
+</div>
